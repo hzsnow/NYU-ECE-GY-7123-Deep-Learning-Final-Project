@@ -35,8 +35,8 @@ The code can be run in Google Colab. The following packages are required:
 Detailed description of the experiments can be found in `Transformer-based Recommender System and Transfer Learning`.pdf also uploaded in this repository.
 
 ## Result
-We ran the training for pre-trained moded for 200 epochs and it converges around 
+We ran the training for pre-trained model on MovieLens 1M dataset for 200 epochs and it converges around 50 epochs. Then for the transfer learning on Wiki1000 dataset it has slightly faster convergence rate. Detailed result can be found in the `DL_final_projce.ipynb` notebook.
 | Model Type    | NDCG@10 | HIT@10 |
 | ------- | -------  |-------|
-| Train   | 99.99%   | |
-| Test    | 95.25%   | |
+| Pre-trained   | 0.5781   | 0.8101 |
+| Fine-tuned    | 0.8689   | 0.9053 |

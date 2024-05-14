@@ -14,6 +14,10 @@ There are two `.ipynb` files in the codebase:
 - The main training notebook used for training is `DL_final_projce.ipynb`, which has all the setup of our model for pre-train and fine tuning, with result displayed.
 - A second auxillary notebook used for data processing raw data of MovieLens-100K and Lastfm-1K-User datasets downloaded from the web - they were our inital planned training and target dataset for the project. Run the notebook to produce two `.txt` files that is of the format for the training, but then we found that the MovieLens-100K's user and item dimensions are too small, and the Lastfm dataset has a very very long item sequence, which is not suitable for the current method we picked for transfer learning.
 
+The two `.pth` files are the saved pre-trained and fine-tuned model from the notebook
+- `SSE_PT10kemb.pth` is the pre-trained model
+- `SSE_PT10tf.pth` is the fine-tuned model
+
 ## PreRequisistes
 The code can be run in Google Colab. The following packages are required:
 
